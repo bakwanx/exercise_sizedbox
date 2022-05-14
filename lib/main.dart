@@ -14,35 +14,38 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-home: Scaffold(
-  body: Center(
-    child: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        SizedBox(
-          width: 100,
-          height: 40,
-          child: Container(
-            color: Colors.green,
+      home: Scaffold(
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                width: 100,
+                height: 40,
+                child: Container(
+                  color: Colors.green,
+                ),
+              ),
+              SizedBox(
+                height: 20,//memberi jarak vertikal
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.cameraswitch_outlined),
+                  SizedBox(
+                    width: 20,//memberi jarak horizontal
+                  ),
+                  Icon(Icons.call_end),
+                  SizedBox(
+                    width: 20,
+                  )
+                ],
+              ),
+            ],
           ),
         ),
-        SizedBox(
-          height: 20,//memberi jarak vertikal
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(Icons.cameraswitch_outlined),
-            SizedBox(
-              width: 20,//memberi jarak horizontal
-            ),
-            Icon(Icons.call_end),
-          ],
-        ),
-      ],
-    ),
-  ),
-),
+      ),
     );
   }
 }
